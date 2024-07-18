@@ -113,8 +113,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   kind: 'StorageV2'
   sku: environmentConfigurationMap[environmentType].storageAccount.sku
 }
-
-output appServiceAppHostName string = appServiceApp.properties.defaultHostName
-
 output appServiceAppName string = appServiceApp.name
 output appServiceAppHostName string = appServiceApp.properties.defaultHostName
