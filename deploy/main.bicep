@@ -115,3 +115,6 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 }
 
 output appServiceAppHostName string = appServiceApp.properties.defaultHostName
+
+output appServiceAppName string = appServiceApp.name
+output appServiceAppHostName string = appServiceApp.properties.defaultHostName
